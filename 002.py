@@ -3,9 +3,7 @@
 # whose values do not exceed four million, find the sum of the even-valued terms.
 import utils
 
-sumOfFib = 0
-first = 1
-second = 2
+sumOfFib, first, second = 0, 1, 2
 
 while second <= 4e6:
 	if utils.is_even(second):
@@ -13,4 +11,4 @@ while second <= 4e6:
 
 	first, second = second, first + second
 
-print("%d" % sumOfFib) # 4613732
+print("%d" % sumOfFib)  # 4613732
